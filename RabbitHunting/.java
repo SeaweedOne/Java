@@ -23,7 +23,7 @@ public class RabitHunting {
 				int rabbit_y = sc.nextInt();
 				int rabbit[] = {rabbit_x,rabbit_y}; //여우를 기준으로 가로세로축 찾기
 				if((fox[0]==rabbit[0])||(fox[1]==rabbit[1])) {
-					count = count +1;
+					count++;
 				}
 				for(int k =0; k<maxNum; k++) { //여우가 한칸씩 움직이며 대각선 축 토끼 찾기 
 					int newFox1[] = {fox[0]+k, fox[1]+k};
@@ -31,7 +31,7 @@ public class RabitHunting {
 					int newFox3[] = {fox[0]+k, fox[1]-k};
 					int newFox4[] = {fox[0]-k, fox[1]+k};
 					if((Arrays.equals(newFox1,rabbit))||(Arrays.equals(newFox2,rabbit))||(Arrays.equals(newFox3,rabbit))||(Arrays.equals(newFox4,rabbit))) {
-						count = count +1;
+						count++;
 					}
 				}
 			}
