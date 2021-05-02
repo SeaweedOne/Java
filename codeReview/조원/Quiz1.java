@@ -10,15 +10,15 @@ public class Quiz1 {
 	public static void main(String args[]) throws Exception { //이부분 주의~ 
 		
 		System.setIn(new FileInputStream("src/inputTest.txt")); //파일 불러오기 
-		Scanner sc = new Scanner(System.in); //스캐너 호출
+		Scanner sc = new Scanner(System.in);
 		
 		int T; 
 		T = sc.nextInt(); //nextInt 이용해 첫번째 숫자(테스트케이스)를 읽어옵니다. 
 		sc.nextLine(); //nextLine을 이용해 첫번째 줄 공백을 읽어들여준다!
 
-		 int sum;
+		 int sum; // 갯수를 누적시킬 변수를 설정.
 		 for(int i=0; i < T; i++) { //문자열을 불러오기 위한 for문
-			 sum = 0; // 갯수를 누적시킬 변수를 설정.
+			 sum = 0; 
 			 char[] c = sc.nextLine().toCharArray(); //이제 문자열을 한줄씩 불러옵니다.
 //			 System.out.println(Arrays.toString(c));
 			 
@@ -29,12 +29,15 @@ public class Quiz1 {
 
 		 }
 //			char a = "A";
-//			char a = 'A';
-//			System.out.println(a+1);
-			
+//			char b = 'A';
+//			System.out.println(b);
+//			System.out.println(b+1);
+//			System.out.println("-----------");
+//			
 //			String c = 'A';
-//		    String b = "A";
-//		    System.out.println(b+1);
+//		            String d = "A";
+//		            System.out.println(d);
+//		            System.out.println(d+1);
 		
 		
 	}

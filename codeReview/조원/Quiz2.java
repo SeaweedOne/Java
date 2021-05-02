@@ -23,7 +23,7 @@ public class Quiz2 {
 		 int sum;
 		 for(int i=0; i < T; i++) {//테스트케이스만큼 포문 반복
 			 sum = 0; 
-			 String[] E = sc.nextLine().split(" ");  // 한 라인을 불러와 공백을 기준으로 나눠준다. 나눠준 것을 e라는 배열에 저장.
+			 String[] E = sc.nextLine().split(" ");  // 한 라인을 불러와 공백을 기준으로 나눠 e라는 배열에 저장. 질문/ 이 배열에 들어가 있는 요소들은 숫자일까요? 문자일까요?
 			 int[] intArray = Stream.of(E).mapToInt(Integer::parseInt).toArray();//스트림 - 람다함수를 활용할 수 있는 기술 mapToInt는 배열 안의 요소를 하나씩 꺼내오는 기능. 
 			 Arrays.sort(intArray);	//정렬 
 			 

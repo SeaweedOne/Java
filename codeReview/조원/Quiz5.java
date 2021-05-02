@@ -30,7 +30,7 @@ public class Quiz5 {
 					System.out.println(res45 + " " + number / bus25); // 남은학생수 /25
 					break;
 				}
-			} else { // 학생수에서 45보다 작다면?
+			} else { // 학생수가 45보다 작다면?
 
 				int temp = (number <= bus25) ? res25++ : res45++; // 삼항연산자 학생수가 25보다 작거나 같다면 ? 25인승추가 : 아니라면 45인승 추가
 				System.out.println(res45 + " " + res25);

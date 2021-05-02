@@ -8,13 +8,6 @@ public class Quiz3 {
 
 	public static void main(String[] args) throws FileNotFoundException { //이부분 주의 
 		
-		//2차원 배열의 특정 좌표를 기준으로 해당 좌표의 동일 행의 합과 동일 열의 합을 차례로 출력하는 프로그램을 작성하시오.
-		//배열의 i,j는 i행 j열을 나타냄 
-		//입력의 첫 줄은 행과 열의 숫자를 의미, 아래줄은 행과 열만큼 2차원 배열의 값을 나타냄.
-		//배열 다음에는 특정 좌효가 몇 개인지 나태내는 숫자 하나가 주어지고 
-		//특정 좌표의 갯수만큼 해당 좌표를 읽어들여서 출력을 처리한다.
-		
-		//다차원배열 [세로(행)][가로(열)]
 		System.setIn(new FileInputStream("src/inputArraySum.txt")); //파일 불러오기 
 
 		int n, m, k, sum = 0; 
@@ -23,10 +16,11 @@ public class Quiz3 {
 		
 		n = sc.nextInt(); //배열의 크기 정의를 위해 넥스트 인트를 사용해 숫자 하나씩 읽어와 n과 m에 넣기. 
 		m = sc.nextInt(); 
+
+		//다차원배열 [세로(행)][가로(열)]
 		//app
 		//[1,2,3]    /app길이는?
 		//[4,5,6]   /app[0]의 길이는?
-		
 		map  = new int[n+1][m+1]; //n,m의 값으로 이차원 배열의 크기를 설정. 
 		
 		
@@ -40,9 +34,8 @@ public class Quiz3 {
 		
 		k = sc.nextInt(); //테스트 케이스 정의 
 		for(int i=0; i < k;i++) {
-			int rowsum = 0; //가로 행 합을 구하기 위한 변수
-			int colsum = 0; //세로 열 합을 구하기 위한 변수 
-			//질문 합을 누적할 변수들이 for문 밖에 있어도 결과는 같을까요?
+			int rowsum = 0; //세로,가로 행 합을 구하기 위한 변수 정의
+			int colsum = 0; //질문 합을 누적할 변수들이 for문 밖에 있어도 결과는 같을까요?
 			
 			int x1 = sc.nextInt(); //X좌표값 받아오기 
 			int y1 = sc.nextInt(); //Y좌표값 받아오기
