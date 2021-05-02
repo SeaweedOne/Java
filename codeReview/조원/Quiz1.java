@@ -21,7 +21,6 @@ public class Quiz1 {
 			 sum = 0; // 갯수를 누적시킬 변수를 설정.
 			 char[] c = sc.nextLine().toCharArray(); //이제 문자열을 한줄씩 불러옵니다.
 //			 System.out.println(Arrays.toString(c));
-			 //질문 문자열에도 인덱스가 존재할까요?
 			 
 			 for(int j=0; j < c.length ; j++) { //배열의 길이만큼 새로운 포문을 생성
 				 if(c[j] == 'A') sum++;//그배열의 인덱스로 접근해 만약 그 글자가 A라면 sum을 1 키워줍니다.
